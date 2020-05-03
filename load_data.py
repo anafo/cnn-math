@@ -7,6 +7,7 @@ img_size = 536
 img_data = []
 img_label = []
 # Adjust your paths and provide a subfolder as a string, e.g. 'square_35_rotate'
+# Can be used in a loop to read through several folders
 def load_img_data(subfolder, img_size = 536):
     folder = os.getcwd() + '\\Data\\data\\' + subfolder
     images = glob(os.path.join(folder, '*.png'))
